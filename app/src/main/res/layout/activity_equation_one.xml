@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="rocks.unoriginality.ryan.steamfitter.EquationOne">
+    tools:context="rocks.unoriginality.ryan.steamfitter.RollingOffset">
 
     TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -13,95 +13,123 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/e1i1"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
+        android:text="@string/e1RollText"
+        android:id="@+id/rollTextView"
+        android:clickable="false"
+        android:layout_above="@+id/setTextInput"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/e1i2"
-        android:id="@+id/textView2"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_below="@+id/editText"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_marginTop="25dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/e1i3"
-        android:id="@+id/textView3"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_below="@+id/textView2"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginTop="50dp" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/rollTextInput"
+        android:gravity="right"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:gravity="right" />
+        android:layout_alignLeft="@+id/angleTextInput"
+        android:layout_alignStart="@+id/angleTextInput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e1SetText"
+        android:id="@+id/setTextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/setTextInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:gravity="right" />
+        android:id="@+id/setTextInput"
+        android:gravity="right"
+        android:layout_below="@+id/rollTextInput"
+        android:layout_alignLeft="@+id/rollTextInput"
+        android:layout_alignStart="@+id/rollTextInput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e1AngleText"
+        android:id="@+id/angleTextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/angleTextInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:gravity="right" />
+        android:id="@+id/angleTextInput"
+        android:gravity="right"
+        android:layout_below="@+id/setTextInput"
+        android:layout_alignRight="@+id/calculateButtonE1"
+        android:layout_alignEnd="@+id/calculateButtonE1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/e1b"
         android:id="@+id/calculateButtonE1"
-        android:layout_above="@+id/answerE1"
-        android:layout_alignRight="@+id/answerE1"
-        android:layout_alignEnd="@+id/answerE1"
-        android:layout_alignLeft="@+id/answerE1"
-        android:layout_alignStart="@+id/answerE1"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:textSize="25sp"
-        android:onClick="calculate" />
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/runE1"
+        android:layout_alignEnd="@+id/runE1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/e1a"
-        android:id="@+id/answerE1"
-        android:gravity="right"
-        android:layout_alignParentBottom="true"
+        android:text="@string/e1A"
+        android:id="@+id/A_E1"
+        android:gravity="left"
+        android:textSize="30sp"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/calculateButtonE1"
+        android:layout_alignRight="@+id/angleTextInput"
+        android:layout_alignEnd="@+id/angleTextInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/e1Travel"
+        android:id="@+id/travelE1"
+        android:textSize="30sp"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/A_E1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
+        android:gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/e1Run"
+        android:id="@+id/runE1"
+        android:gravity="left"
         android:textSize="30sp"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="true"
+        android:layout_below="@+id/travelE1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/travelE1"
+        android:layout_alignStart="@+id/travelE1" />
 
 </RelativeLayout>

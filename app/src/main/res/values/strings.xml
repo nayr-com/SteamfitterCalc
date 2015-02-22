@@ -3,16 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="Equation1">Equation One</string>
-    <string name="Equation2">Equation Two</string>
-    <string name="Equation3">Equation Three</string>
-    <string name="Equation4">Equation Four</string>
-    <string name="Equation5">Equation Five</string>
+    <string name="RollingOffsetEq">Rolling Offset</string>
     <string name="title_activity_equation_one">EquationOne</string>
     //For inputs the format is e#i# translating to equation#input#
-    <string name="e1i1">A = </string>
-    <string name="e1i2">B = </string>
-    <string name="e1i3">C = </string>
-    <string name="e1a">Large Text</string>
-    <string name="e1b">New Button</string>
+    <string name="e1RollText">Roll: </string>
+    <string name="e1SetText">Set: </string>
+    <string name="e1AngleText">Angle: </string>
+    <string name="e1A">A:</string>
+    <string name="e1Travel">Travel:</string>
+    <string name="e1Run">Run:</string>
+    <string name="e1b">Calculate</string>
 </resources>

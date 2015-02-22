@@ -39,8 +39,8 @@ public class EquationSelection extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void equationOne(View view){
-        Intent intent = new Intent(this,EquationOne.class);
+    public void openRollingOffset(View view){
+        Intent intent = new Intent(this,RollingOffset.class);
         startActivity(intent);
     }
 }
