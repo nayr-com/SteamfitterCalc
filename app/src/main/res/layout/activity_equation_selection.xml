@@ -10,18 +10,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/RollingOffsetEq"
-            android:id="@+id/openEquationOne"
-            android:onClick="openRollingOffset"/><![CDATA[
-
-        Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Equation2"
-            android:id="@+id/button2" />
-
-
-
-
-
-    ]]>
+            android:id="@+id/openRollingOffset"
+            android:onClick="openRollingOffset"/><![CDATA[]]>
 </LinearLayout>

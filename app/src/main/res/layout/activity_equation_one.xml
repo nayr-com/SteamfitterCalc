@@ -6,8 +6,6 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="rocks.unoriginality.ryan.steamfitter.RollingOffset">
 
-    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,7 +74,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/e1b"
+        android:text="@string/e1CalculateButton"
         android:id="@+id/calculateButtonE1"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
@@ -91,8 +89,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/e1A"
-        android:id="@+id/A_E1"
+        android:text="@string/e1TrueOffset"
+        android:id="@+id/trueOffsetE1"
         android:gravity="left"
         android:textSize="30sp"
         android:textIsSelectable="true"
@@ -110,7 +108,7 @@
         android:id="@+id/travelE1"
         android:textSize="30sp"
         android:textIsSelectable="true"
-        android:layout_below="@+id/A_E1"
+        android:layout_below="@+id/trueOffsetE1"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:gravity="left"
